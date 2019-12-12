@@ -9,7 +9,5 @@ change_dpi = glob.glob('./*.jpg')
 
 for im in change_dpi:
     new_im = Image.open(im)
-    print(new_im.info['dpi'])
-
     new_im.save('./changed_dpi/' + im, dpi=(500,500))
 
